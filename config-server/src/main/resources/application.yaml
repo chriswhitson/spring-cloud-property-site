@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - file:./remote-config
+
+server:
+  port: 9091
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

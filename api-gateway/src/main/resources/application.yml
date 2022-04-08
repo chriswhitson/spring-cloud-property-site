@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: configserver:http://localhost:9091
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG

@@ -19,6 +19,7 @@
 
     <modules>
         <module>config-server</module>
+        <module>service-discovery</module>
     </modules>
 
     <properties>
